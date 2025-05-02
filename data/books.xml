@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?xml-stylesheet href="books.xsl" type="text/xsl"?>
+<bibliotheque>
+    <livre id="1">
+        <titre>Le Petit Prince</titre>
+        <auteur>Antoine de Saint-Exupéry</auteur>
+        <annee>1943</annee>
+        <genre>Conte philosophique</genre>
+        <disponible>Disponible</disponible>
+    </livre>
+    <livre id="2">
+        <titre>Ltranger</titre>
+        <auteur>Albert Camus</auteur>
+        <annee>1942</annee>
+        <genre>Roman</genre>
+        <disponible>Indisponible</disponible>
+    </livre>
+    <livre id="3">
+        <titre>Ltranger</titre>
+        <auteur>Albert Camus</auteur>
+        <annee>1942</annee>
+        <genre>Roman</genre>
+        <disponible>Indisponible</disponible>
+    </livre>
+    <livre id="4">
+        <titre>hio</titre>
+        <auteur>aaa</auteur>
+        <annee>2001</annee>
+        <genre>asas</genre>
+        <disponible>Disponible</disponible>
+    </livre>
+    <livre id="5">
+        <titre>amine</titre>
+        <auteur>asdasd</auteur>
+        <annee>2001</annee>
+        <genre>amine</genre>
+        <disponible>Disponible</disponible>
+    </livre>
+    <livre id="7">
+        <titre>lepin</titre>
+        <auteur>mer</auteur>
+        <annee>2025</annee>
+        <genre>info</genre>
+        <disponible>Disponible</disponible>
+    </livre>
+</bibliotheque>

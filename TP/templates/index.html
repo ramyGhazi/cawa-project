@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bibliothèque</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Ma Bibliothèque</h1>
+    
+    <!-- Search bar to filter books -->
+    <input type="text" id="searchInput" placeholder="Rechercher un livre...">
+    <button onclick="searchBooks()">Rechercher</button>    
+    <h2>Ajouter un livre</h2>
+    <form id="addForm" onsubmit="addBook(event)">
+        <input type="text" id="titre" placeholder="Titre" required="required"/>
+        <input type="text" id="auteur" placeholder="Auteur" required="required"/>
+        <input type="number" id="annee" placeholder="Année" required="required"/>
+        <input type="text" id="genre" placeholder="Genre" required="required"/>
+        <select id="disponible">
+            <option value="Disponible">Disponible</option>
+            <option value="Indisponible">Indisponible</option>
+        </select>
+        <button type="submit">Ajouter</button>
+    </form>
+    <!-- Table displaying books -->
+    <h4>Livres disponibles</h4>
+
+    <table id="bookTable">
+        <thead>
+            <tr>
+                <th>Titre</th>
+                <th>Auteur</th>
+                <th>Année</th>
+                <th>Genre</th>
+                <th>Disponible</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{ book.titre }}</td>
+                <td>{{ book.auteur }}</td>
+                <td>{{ book.annee }}</td>
+                <td>{{ book.genre }}</td>
+                <td>{{ book.disponible }}</td>
+                <td><button onclick="deleteBook({{ book.id }})">Supprimer</button></td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
